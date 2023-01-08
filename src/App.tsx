@@ -137,6 +137,8 @@ function App() {
     <Card
       style={{
         height: "50vh",
+        flexWrap: "wrap",
+        overflow: "scroll",
       }}
       variant="outlined"
     >
@@ -286,7 +288,7 @@ function App() {
     >
       <Grid item xs={12}>
         <Grid container justifyContent={"center"} spacing={5}>
-          <Grid item xs={12} sm={4} margin="5vh">
+          <Grid item xs={12} sm={12} lg={4} margin="5vh">
             {card}
             <Dialog open={openKeysDialog} onClose={handleClose}>
               <DialogContent>
@@ -607,7 +609,7 @@ function App() {
               </DialogActions>
             </Dialog>
           </Grid>
-          <Grid item xs={12} sm={4} margin="5vh">
+          <Grid item xs={12} sm={12}  lg={4} margin="5vh">
             {explanationsCard}
           </Grid>
         </Grid>
