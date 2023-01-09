@@ -137,8 +137,6 @@ function App() {
     <Card
       style={{
         height: "50vh",
-        flexWrap: "wrap",
-        overflow: "scroll",
       }}
       variant="outlined"
     >
@@ -146,7 +144,7 @@ function App() {
         <Grid
           container
           direction={"column"}
-          style={{ height: "100%", justifyContent: "center" }}
+          style={{ height: "100%", justifyContent: "center",}}
         >
           <Grid item>
             <Grid container spacing={5} alignItems="center">
@@ -192,7 +190,7 @@ function App() {
         height: "50vh",
 
         flexWrap: "wrap",
-        overflow: "scroll",
+        overflowY: "scroll",
       }}
       variant="outlined"
     >
